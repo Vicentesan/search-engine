@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { Icons } from '@/components/Icons'
+import { SearchBar } from '@/components/SearchBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -59,7 +60,7 @@ export default function RootLayout({
               </p>
 
               <div className="mx-auto mt-16 flex w-full max-w-2xl flex-col">
-                {/* TODO: <SearchBar /> */}
+                <SearchBar />
 
                 {children}
               </div>
